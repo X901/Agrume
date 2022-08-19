@@ -561,8 +561,9 @@ extension Agrume: AgrumeCellDelegate {
         self.collectionView.alpha = 0
         self.blurContainerView.alpha = 0
         self.overlayView?.alpha = 0
-      },
-      completion: dismissCompletion
+      }
+//      ,
+//      completion: dismissCompletion
     )
   }
   
@@ -580,8 +581,9 @@ extension Agrume: AgrumeCellDelegate {
         self.overlayView?.alpha = 0
         let scale: CGFloat = .maxScaleForExpandingOffscreen
         self.collectionView.transform = CGAffineTransform(scaleX: scale, y: scale)
-      },
-      completion: dismissCompletion
+      }
+//      ,
+//      completion: dismissCompletion
     )
   }
 
